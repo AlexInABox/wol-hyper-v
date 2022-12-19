@@ -1,0 +1,22 @@
+{
+  "name": "wol-hyper-v",
+  "version": "1.0.0",
+  "description": "A script able to start a Hyper-V VM when receiving an http request.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexInABox/wol-hyper-v.git"
+  },
+  "author": "alexinabox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexInABox/wol-hyper-v/issues"
+  },
+  "homepage": "https://github.com/AlexInABox/wol-hyper-v#readme",
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
