@@ -1,6 +1,6 @@
 {
   "name": "wol-hyper-v",
-  "version": "1.0.0",
+  "version": "1.1.4",
   "description": "A script able to start a Hyper-V VM when receiving an http request.",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "child_process": "^1.0.2",
     "express": "^4.18.2",
-    "express.js": "^1.0.0"
+    "express.js": "^1.0.0",
+    "node-windows": "^1.0.0-beta.8"
   }
 }
