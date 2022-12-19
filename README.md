@@ -234,7 +234,7 @@ Website: [https://alexinabox.de](https://alexinabox.de)
 [issues-shield]: https://img.shields.io/github/issues/alexinabox/wol-hyper-v.svg?style=for-the-badge
 [issues-url]: https://github.com/alexinabox/wol-hyper-v/issues
 [license-shield]: https://img.shields.io/github/license/alexinabox/wol-hyper-v.svg?style=for-the-badge
-[license-url]: https://github.com/alexinabox/wol-hyper-v/blob/master/LICENSE.txt
+[license-url]: https://github.com/alexinabox/wol-hyper-v/blob/master/LICENSE
 [product-screenshot]: assets/showcase1.png
 [Express.js]: https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=expressdotjs&logoColor=white
 [Express-url]: https://expressjs.com
