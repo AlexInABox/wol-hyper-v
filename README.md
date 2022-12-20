@@ -2,7 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![GNU 3.0 License][license-shield]][license-url]
 
 
 
@@ -115,9 +115,10 @@ v8.16.0
 
     ```json
     {
-        "vmName": "testvm", <-- the name of your vm in hyper-v
-        "port": 5986,       <-- your server will run on this port
-        "verbose": true     <-- set this to true incase of any errors
+        "vmName": "testvm",     <-- the name of your vm in hyper-v
+        "hostName": "testhost", <-- the name of your host machine
+        "port": 5986,           <-- your server will run on this port
+        "verbose": true         <-- set this to true incase of any errors
     }
     ```
 

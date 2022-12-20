@@ -44,7 +44,32 @@ app.get('/', (req, res) => { //Handle GET requests
     }
 });
 
-//start the vm asynchronously
+//start listening for GET requests on the path /ismyvmactive
+//these GET requests are responded with 200 OK if the requested vmname inside the header is found in the output of the command "Get-VM -ComputerName ${config.hostName} | Where-Object {$_.State -eq 'Running'}" and 404 Not Found if the vmname is not found
+app.get('/ismyvmactive', (req, res) => {
+    exec(`Get-VM -ComputerName ${config.hostName} | Where-Object {$_.State -eq \'Running\'}`, {'shell':'powershell.exe'}, (error, stdout, stderr)=> {
+        if (error !== null) {
+            printError(error, stderr, stdout);
+        }
+        else {
+            if (stdout.includes(req.headers.vmname)) {
+                res.status(200).send('Your requested VM is active!');
+                console.log("Requested VM is active!");
+                console.log("Requested VM-Name: " + req.headers.vmname);
+            }
+            else {
+                
+                console.log(stdout);
+                res.status(404).send('Your requested VM is not active!');
+                console.log("Requested VM is not active!");
+                console.log("Requested VM-Name: " + req.headers.vmname);
+            }
+        }
+    })
+});
+
+
+
 //The following code is used to start the VM
 function startVM() {
     exec('Start-VM -Name ' + vmName, {'shell':'powershell.exe'}, (error, stdout, stderr)=> {
@@ -54,7 +79,7 @@ function startVM() {
         else {
             console.log (`VM (${vmName}) started successfully!`)
         }
-        console.log(stdout); //does not print anything
+        console.log(stdout); //does only print the output of the command if the VM is already running
     })
 }
 
@@ -68,7 +93,7 @@ function stopVM() {
         else {
             console.log (`VM (${vmName}) stopped successfully!`)
         }
-        console.log(stdout); //does not print anything
+        console.log(stdout); //does only print the output of the command if the VM is already stopped
     })
 }
 
