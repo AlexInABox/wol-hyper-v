@@ -154,8 +154,17 @@ The daemonization of this application ensures that it always runs in the backgro
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+<div align="left">
+  <a href="https://www.icloud.com/shortcuts/440b9c5e3fcc47239df3b2268937008e">
+    <img src="assets/shortcut-icon.png" alt="Logo" width="50" height="50">
+  </a>
+</div>
 
-Like you can have your health data inside discord webhooks now. wooho.
+I suggest using this application in combination with my [iPhone shortcut](https://www.icloud.com/shortcuts/440b9c5e3fcc47239df3b2268937008e). <br>
+This shortcut allows you to start and stop your VM with a single tap on your iPhone. <br>
+
+Link to the shortcut: <br>
+https://www.icloud.com/shortcuts/440b9c5e3fcc47239df3b2268937008e <br>
 
 _For more examples, please refer to the **non existent** [Documentation](https://example.com)_
 
@@ -219,6 +228,7 @@ Website: [https://alexinabox.de](https://alexinabox.de)
 ## Acknowledgments
 
 * []() stackoverflow
+* []() <a href="https://iconscout.com/icons/my-shortcuts" target="_blank">My shortcuts Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
