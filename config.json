@@ -1,5 +1,6 @@
 {
     "vmName": "testvm",
+    "hostName": "testhost",
     "port": 5986,
     "verbose": true
 }
